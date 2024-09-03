@@ -11,6 +11,7 @@ A modern music player application built with the MERN stack (MongoDB, Express.js
 - [Overview](#overview)
 - [Frontend](#frontend)
 - [Backend](#backend)
+- [Running the Project](#running-the-project)
 - [API Endpoints](#api-endpoints)
 
 ## Overview
