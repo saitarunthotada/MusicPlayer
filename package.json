@@ -1,0 +1,22 @@
+{
+  "name": "musicplayer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "build": "react-scripts build",
+    "server": "npm run dev --prefix server",
+    "client": "npm run build --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mui/icons-material": "^6.0.1",
+    "firebase": "^10.13.1",
+    "react-scripts": "^5.0.1"
+  }
+}
