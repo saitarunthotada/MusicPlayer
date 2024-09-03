@@ -1,4 +1,3 @@
-Here's a GitHub README for your MERN stack music player application, tailored to the project details you've provided:
 
 ---
 
