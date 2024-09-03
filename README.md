@@ -3,7 +3,7 @@
 
 # Music Player App
 
-A modern music player application built with the MERN stack (MongoDB, Express.js, React, Node.js). This app allows users to sign up, sign in, manage playlists, add songs, and play music.
+A web application built with the MERN stack (MongoDB, Express.js, React, Node.js). This app allows users to sign up, sign in, manage playlists, add songs, and play music.
 
 ## Table of Contents
 
@@ -131,4 +131,24 @@ The backend is located in the `server` directory. It handles user authentication
 - **POST** `/api/playlists/add/song` - Add a song to a playlist (requires authentication)
 - **GET** `/api/playlists/` - Get details of a playlist (requires authentication)
 
+## Known Issues
+
+### **Frontend**
+
+**1. Fetching Songs from Playlists**
+- **Issue**: The frontend cannot fetch and display songs from the playlists.
+- **Current Status:** Checked if the API endpoint is correct, looked over the component code for mistakes, and network requests.
+  
+**2. Fetching Playlists to Add Songs** 
+- **Issue**: The frontend cannot fetch playlists, preventing users from adding songs.
+- **Current** Status: Checking API endpoint validity, React setup for API calls, and network requests.
+
+**2. Playback Error** 
+- **Issue**: Unable to play or pause the media
+- **Current** Status: Used drive shareable link and it is not coverting into direct link to play. Still Unknown.
+
+### **Backend**
+- **Status**: All APIs are working as intended.
+- **Current Status**: All endpoints have been tested and are functioning correctly.
 ---
+
