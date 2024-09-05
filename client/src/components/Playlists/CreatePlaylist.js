@@ -15,7 +15,7 @@ function CreatePlaylist() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', { name }, {
+      await axios.post('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com/api/playlists', { name }, {
         headers: { Authorization: token },
       });
       alert('Playlist created successfully!');

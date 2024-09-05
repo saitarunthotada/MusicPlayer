@@ -17,7 +17,7 @@ function SignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/auth/signin', { email, password });
+      const res = await axios.post('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/auth/signin', { email, password });
       localStorage.setItem('token', res.data.token);
       navigate('/dashboard');
     } catch (err) {

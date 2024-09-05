@@ -14,7 +14,7 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/auth/signup', { email, password });
+      await axios.post('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/auth/signup', { email, password });
       alert('User created, You can now sign in.');
     } catch (err) {
       console.error(err);

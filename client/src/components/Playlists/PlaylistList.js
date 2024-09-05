@@ -22,7 +22,7 @@ function PlaylistList() {
           console.error('No token found');
           return;
         }
-        const response = await axios.get('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
+        const response = await axios.get('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
           headers: { Authorization: `Bearer ${token}` },
         });
         console.log('Playlists fetched:', response.data);

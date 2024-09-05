@@ -18,7 +18,7 @@ function AddSongToPlaylist() {
     const fetchPlaylists = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
+        const res = await axios.get('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPlaylists(res.data);
@@ -33,7 +33,7 @@ function AddSongToPlaylist() {
     const fetchSongs = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/songs', {
+        const res = await axios.get('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/songs', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setSongs(res.data);
@@ -48,7 +48,7 @@ function AddSongToPlaylist() {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/playlists/add/song', { playlistId, songId }, {
+      await axios.post('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/playlists/add/song', { playlistId, songId }, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Song added to playlist successfully!');

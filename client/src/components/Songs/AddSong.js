@@ -12,13 +12,13 @@ function AddSong() {
   const [title, setTitle] = useState('');
   const [artist, setArtist] = useState('');
   const [url, setUrl] = useState('');
-  const [error, setError] = useState('');
+  const [error] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/songs', { title, artist, url }, {
+      await axios.post('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/songs', { title, artist, url }, {
         headers: { Authorization: token },
       });
       alert('Song added successfully');

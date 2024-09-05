@@ -15,7 +15,7 @@ function PlaylistSelector({ onSelect }) {
     const fetchPlaylists = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://ec2-54-206-145-102.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
+        const response = await axios.get('http://ec2-3-27-172-52.ap-southeast-2.compute.amazonaws.com:5000/api/playlists', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPlaylists(response.data);
